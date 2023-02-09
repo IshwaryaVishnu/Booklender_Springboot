@@ -13,7 +13,7 @@ public class LibraryUser {
     private int userId;
     @CreationTimestamp
     private LocalDate regDate;
-    @Column(unique = true, nullable = false)
+    @Column( nullable = false)
     private String name;
     @Column(unique = true, nullable = false)
     private String email;
