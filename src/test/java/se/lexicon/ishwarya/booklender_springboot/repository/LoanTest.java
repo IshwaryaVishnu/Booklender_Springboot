@@ -35,7 +35,7 @@ public class LoanTest {
 
     @Test
     void given_valid_bookId_when_findByBookId_then_return_loan() {
-        List<Loan> result = loanRepository.findByBookId(loan.getBook().getBookId());
+        List<Loan> result = loanRepository.findByBookId(Long.valueOf(loan.getBook().getBookId()));
         assertNotNull(result);
         assertFalse(result.isEmpty());
         assertEquals(loan, result.get(0));
