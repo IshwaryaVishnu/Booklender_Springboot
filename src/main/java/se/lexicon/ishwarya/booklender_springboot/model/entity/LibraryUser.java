@@ -20,13 +20,11 @@ public class LibraryUser {
 
     public LibraryUser() {
     }
-    public LibraryUser(LocalDate regDate, String name, String email) {
-        this.regDate = regDate;
+    public LibraryUser( String name, String email) {
         this.name = name;
         this.email = email;
     }
-
-    public int getUserId() {
+       public int getUserId() {
         return userId;
     }
 
@@ -79,4 +77,7 @@ public class LibraryUser {
                 ", email='" + email + '\'' +
                 '}';
     }
+
+
 }
+
