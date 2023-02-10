@@ -16,9 +16,9 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 public class BookRepositoryTest {
 
     @Autowired
-    private BookRepository bookRepository;
+     BookRepository bookRepository;
 
-    private Book testBook;
+     Book testBook;
 
     @BeforeEach
     void setUp() {

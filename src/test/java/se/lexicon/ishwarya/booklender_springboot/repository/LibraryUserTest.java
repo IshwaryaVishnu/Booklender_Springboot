@@ -1,5 +1,4 @@
 package se.lexicon.ishwarya.booklender_springboot.repository;
-
 import org.junit.Test;
 import org.junit.jupiter.api.BeforeEach;
 import org.springframework.beans.factory.annotation.Autowired;
