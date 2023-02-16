@@ -16,7 +16,6 @@ import java.util.stream.Collectors;
 public class BookServiceImpl implements BookService {
 
     @Autowired
-
     BookRepository bookRepository;
 
     @Autowired
@@ -60,7 +59,6 @@ public class BookServiceImpl implements BookService {
                 .collect(Collectors.toList());
     }
 
-    @Override
     public BookDto create(BookDto bookDto) {
         if (bookDto == null) throw new IllegalArgumentException("Book data was null");
         if (bookDto.getBookId() != 0) throw new IllegalArgumentException("Book id should be null or zero");

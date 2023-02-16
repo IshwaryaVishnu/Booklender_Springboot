@@ -1,4 +1,5 @@
 package se.lexicon.ishwarya.booklender_springboot.service;
+
 import se.lexicon.ishwarya.booklender_springboot.dto.BookDto;
 
 import java.util.List;
@@ -10,7 +11,7 @@ public interface BookService {
     List<BookDto> findByBookTitle(String title);
     BookDto findById(Integer bookId);
     List<BookDto> findAll();
-    BookDto create(BookDto bookDto);
-    BookDto update(BookDto bookDto);
+    BookDto create(BookDto BookDto);
+    BookDto update(BookDto BookDto);
     Boolean delete(Integer bookId);
 }
